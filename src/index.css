@@ -1,0 +1,130 @@
+
+body{
+background-color: rgb(53, 51, 51);
+padding-right: 7px;
+margin: 0;
+font-family:Arial, Helvetica, sans-serif ;  
+}
+.angka{
+  text-align: center;
+  padding: 70px;
+  font-size: 60px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.judul_atas{
+  display: flex;
+  background-color:#ffd633 ;
+  padding-left: 50px;
+  height: 260px;
+  width: 100% ;
+  overflow: hidden;
+  margin:0;
+  font-size: 50px ;
+  font-weight:bold;
+}
+.incubation{
+  padding-left: 10px;
+  padding-top: 50px;
+}
+
+.logo{padding-top: 30px;
+  padding-right: 10px;
+  width: 140px;
+  margin-top: 15px;
+}
+.container{
+  margin-left: 20px;
+  display: grid;
+  grid-gap: 30px;
+  padding: 10px;
+  grid-template-columns: auto auto ;
+  grid-template-rows: auto auto auto;
+}
+.item{
+  padding-top: 80px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+  cursor: pointer;
+}
+.item:hover{
+  border: 5px rgb(255, 255, 255) solid;
+}
+.item-1{
+  width: 99%;
+  background-color: #dbfb15;
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  
+  justify-content: center;
+}
+.item-2{
+  width: 99%;
+  background-color: #2bf2fe;
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  justify-self: center;
+}
+.item-3{
+  margin-top: -20px;
+  width: 99%;
+  background-color: #f474ff;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  margin-right: 5px;
+  justify-self:center;
+}
+.item-4{
+  margin-top: -20px;
+  width: 99%;
+  background-color:#ff8a8a ;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  margin-right: 5px;
+  justify-self: center;
+}
+.judul_bawah{
+  padding-top: 90px ;
+  display: flex;
+  justify-content: left;
+  color: white;
+  background-color:#28aa49 ;
+  padding-left: 50px;
+  height: 140px;
+  width: 100% ;
+  overflow: hidden;
+  margin:0;
+  font-size: 50px ;
+  font-weight:bold;}
+
+  @media(max-width:1024px){
+    .judul_atas{
+      justify-content: center;
+    }
+    .item-1{
+      margin-top: -20px;
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    .item-2{
+      margin-top: -20px;
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+    .item-3{
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+    .item-4{
+      grid-column: 1/3;
+      grid-row: 1/2;}
+    .judul_bawah{
+      justify-content: center;
+    }
+  }
